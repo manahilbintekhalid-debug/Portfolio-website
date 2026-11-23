@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f3ff;
+    color: #25213a;
+}
+
+header {
+    background: #211d35;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    font-size: 28px;
+}
+
+nav h2 span {
+    color: #a78bfa;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a78bfa;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #e9e4ff, #f5f3ff);
+}
+
+.hero-content h3 {
+    font-size: 25px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    color: #7657e8;
+    margin: 10px 0;
+}
+
+.hero-content h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    max-width: 550px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #7657e8;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #5135bd;
+}
+
+section:not(.hero) {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 35px;
+    color: #7657e8;
+    margin-bottom: 30px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    background: white;
+    padding: 30px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000012;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-8px);
+}
+
+.skill h3 {
+    color: #7657e8;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    color: #666;
+}
+
+.education-box {
+    background: white;
+    max-width: 550px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000012;
+    line-height: 2;
+}
+
+.education-box h3 {
+    color: #7657e8;
+}
+
+#contact p {
+    margin: 15px 0;
+}
+
+#contact a {
+    color: #7657e8;
+}
+
+footer {
+    background: #211d35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    section:not(.hero) {
+        padding: 50px 6%;
+    }
+}
